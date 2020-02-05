@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Problems solutions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body id="body-container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+        <a class="navbar-brand" id="home" href="#task-1-page">Problems solutions</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="task-1">List Reverse</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="task-2">Perfect Square</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="task-3">1000 Bills of $1</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="task-4">Simon Game</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card border-0 shadow my-2">
+            <div class="card-body p-5" id="pages-container">
+                <div class="page" id="home-page">
+                    <h2 class="font-weight-light">
+                        Wellcome to your favorite page of problems solutions.
+                    </h2>
+                </div>
+                <div class="page" id="task-1-page">
+                    <h2 class="font-weight-light">Reverse list</h2>
+                    <label for="element-input">Write some text:</label>
+                    <input type="text" name="element" id="element-input"><br><br>
+                    <div class="btn-group" role="group" aria-label="List actions">
+                        <button type="button" class="btn btn-primary" onclick="addElement()">
+                            Add text to list
+                        </button>
+                        <button type="button" class="btn btn-secondary" onclick="reverseList()">
+                            Reverse list
+                        </button>
+                    </div>
+                </div>
+                <div class="page" id="task-2-page">
+                    <h2 class="font-weight-light">Perfect Square</h2>
+                    <table class="table table-light" id="points-table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Input X points</th>
+                                <th scope="col">Input Y points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="number" name="element" id="x1-point-input">
+                                </td>
+                                <td>
+                                    <input type="number" name="element" id="y1-point-input">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="number" name="element" id="x2-point-input">
+                                </td>
+                                <td>
+                                    <input type="number" name="element" id="y2-point-input">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="number" name="element" id="x3-point-input">
+                                </td>
+                                <td>
+                                    <input type="number" name="element" id="y3-point-input">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="number" name="element" id="x4-point-input">
+                                </td>
+                                <td>
+                                    <input type="number" name="element" id="y4-point-input">
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="btn-group" role="group" aria-label="Points Actions">
+                                        <button type="button" class="btn btn-primary" onclick="addPoints()">
+                                            Save values
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" onclick="validateIfIsSquare()">
+                                            Validate if is square
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="page" id="task-3-page">
+                    <h2 class="font-weight-light">1000 Bills of $1</h2>
+                </div>
+                <div class="page" id="task-4-page">
+                    <h2 class="font-weight-light">Simon Game</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  SCRIPTS BOOTSTRAP 4  -->
+    <script src="../js/listener.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
