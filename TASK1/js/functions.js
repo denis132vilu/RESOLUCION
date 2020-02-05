@@ -47,7 +47,7 @@ function addPoints() {
     }
 }
 
-function validate() {
+function validateIfIsSquare() {
     points.sort((a, b) => a[0] - b[0]);
     if (points[0][0] == points[0][1] && points[0][2] == points[0][3]) {
         alert(true);
